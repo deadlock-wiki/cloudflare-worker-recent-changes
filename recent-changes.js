@@ -57,7 +57,7 @@ async function handleProxy(request, env, ctx) {
     }
 
     const rewriter = new HTMLRewriter()
-        .on("#p-Recent_Changes ul.vector-menu-content-list", {
+        .on("#p-Recent_changes ul.vector-menu-content-list", {
             element(el) {
                 el.setAttribute("class", "vector-menu-content-list recent-changes-list");
                 el.setInnerContent(widgetInnerHtml, { html: true });
